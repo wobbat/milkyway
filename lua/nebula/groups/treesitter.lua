@@ -22,7 +22,7 @@ function M.highlight(palette, opts)
     ),
     ["@keyword.function"] = vim.tbl_extend(
       "force",
-      { fg = palette.purple },
+      { fg = palette.cyan },
       opts.styles.keywords
     ),
     ["@label"] = { fg = palette.yellow },
@@ -37,13 +37,13 @@ function M.highlight(palette, opts)
     ["@error"] = { fg = palette.error },
     ["@function"] = vim.tbl_extend(
       "force",
-      { fg = palette.cyan },
+      { fg = palette.purple },
       opts.styles.functions
     ),
-    ["@function.builtin"] = { fg = palette.cyan },
-    ["@method"] = { fg = palette.cyan },
+    ["@function.builtin"] = { fg = palette.purple },
+    ["@method"] = { fg = palette.purple },
     ["@const.macro"] = { fg = palette.yellow },
-    ["@function.macro"] = { fg = palette.cyan },
+    ["@function.macro"] = { fg = palette.purple },
     ["@variable"] = vim.tbl_extend(
       "force",
       { fg = palette.white },
