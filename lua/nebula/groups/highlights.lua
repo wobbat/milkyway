@@ -36,7 +36,7 @@ function M.highlight(palette, opts)
     Folded = { fg = palette.light_gray, bg = palette.alt_bg },
     FoldColumn = { fg = palette.light_gray, bg = palette.alt_bg },
     LineNr = { fg = palette.gray },
-    Whitespace = { fg = palette.gray },
+    Whitespace = { fg = palette.accent },
     VertSplit = { fg = palette.bg, bg = palette.accent },
     CursorLine = {
       bg = palette.alt_bg,
@@ -77,7 +77,7 @@ function M.highlight(palette, opts)
     },
     Conceal = { fg = palette.medium_gray },
     Directory = { fg = palette.blue },
-    SpecialKey = { fg = palette.blue },
+    SpecialKey = { fg = palette.accent },
     Title = { fg = palette.blue },
     ErrorMsg = { fg = palette.error, bg = palette.bg, bold = true },
     Search = { fg = palette.orange, bg = palette.alt_bg },
