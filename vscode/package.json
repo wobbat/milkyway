@@ -1,0 +1,22 @@
+{
+  "name": "milkyway-theme",
+  "displayName": "milkyway Theme",
+  "description": "A dark theme inspired by the night sky",
+  "version": "0.0.1",
+  "publisher": "wobbat",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "milkyway",
+        "uiTheme": "vs-dark",
+        "path": "./themes/milkyway-color-theme.json"
+      }
+    ]
+  }
+}

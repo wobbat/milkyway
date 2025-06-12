@@ -1,14 +1,14 @@
 local M = {}
 
 function M.setup(opts)
-    local settings = require "nebula.settings"
+    local settings = require "milkyway.settings"
     if opts then
         settings.set(opts)
     end
 end
 
 function M.load()
-    local settings = require "nebula.settings"
+    local settings = require "milkyway.settings"
     local opts = settings.opts
 
     vim.api.nvim_command "hi clear"
@@ -18,11 +18,11 @@ function M.load()
 
     vim.o.background = "dark"
     vim.o.termguicolors = true
-    vim.g.colors_name = "nebula"
+    vim.g.colors_name = "milkyway"
 
-    local util = require "nebula.util"
-    local palette = require "nebula.palette"
-    local groups = require "nebula.groups"
+    local util = require "milkyway.util"
+    local palette = require "milkyway.palette"
+    local groups = require "milkyway.groups"
 
     for _, group in ipairs(groups) do
         group = group.highlight(palette, opts)
